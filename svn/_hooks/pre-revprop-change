@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+USER="$3"
+
+if [ "$USER" = "syncuser" ]; then exit 0; fi
+
+echo "Only the syncuser user may change revision properties" >&2
+exit 1

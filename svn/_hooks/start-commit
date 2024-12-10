@@ -1,0 +1,9 @@
+#!/bin/sh 
+
+USER="$2"
+
+if [ "$USER" = "syncuser" ]; then exit 0; fi
+
+echo "You are trying to commit to a MIRROR !" >&2
+echo "Only the syncuser user may commit new revisions" >&2
+exit 1
