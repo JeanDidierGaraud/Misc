@@ -19,6 +19,7 @@ Once in gdb, the survival kit:
 (c)  continue
 (n)  next
 (p)  print <variable>
+     whatis <variable>  # display its (dynamic) type
 (b)  break <function>
      break <file.cpp>:<line>
 (bt) backtrace
@@ -96,4 +97,5 @@ $1 = 0
 ```
 set print static-members off
 set print pretty on
+set print object on
 ```
