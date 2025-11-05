@@ -99,3 +99,11 @@ set print static-members off
 set print pretty on
 set print object on
 ```
+
+
+# History
+```
+set history save on
+set history filename ~/.gdb_history
+```
+
